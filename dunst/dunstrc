@@ -1,0 +1,37 @@
+# vim: filetype=cfg
+
+[global]
+    width = 300
+    height = 300
+    origin = top-right
+    offset = 0x0
+    frame_width = 3
+    frame_color = "#00aa55"
+	corner_radius = 15
+    gap_size = 10
+    idle_threshold = 120
+    font = monospace 9
+    format = "<b>%s</b>\n%b"
+    alignment = center
+    vertical_alignment = center
+    show_indicators = no
+    default_icon = ~/.local/share/icons/bell.png
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 48
+
+[urgency_low]
+    background = "#222222"
+    foreground = "#ffffff"
+    timeout = 10
+
+[urgency_normal]
+    background = "#222222"
+    foreground = "#ffffff"
+    timeout = 10
+
+[urgency_critical]
+    background = "#222222"
+    foreground = "#ffffff"
+    frame_color = "#aa2222"
+    timeout = 0
