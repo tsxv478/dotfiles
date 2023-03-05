@@ -1,0 +1,17 @@
+[Default Applications]
+text/plain=text.desktop
+text/xml=text.desktop
+text/csv=text.desktop
+text/x-shellscript=text.desktop
+image/jpeg=img.desktop
+image/png=img.desktop
+image/gif=img.desktop
+image/webp=img.desktop
+video/x-matroska=vid.desktop
+video/webm=vid.desktop
+video/mp4=vid.desktop
+application/pdf=pdf.desktop
+application/postscript=pdf.desktop;
+x-scheme-handler/mailto=mail.desktop;
+x-scheme-handler/magnet=torrent.desktop;
+application/x-bittorrent=torrent.desktop;
