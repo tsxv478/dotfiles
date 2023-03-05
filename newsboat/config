@@ -1,0 +1,42 @@
+auto-reload no
+notify-always yes
+notify-program notify-send
+notify-format "newsboat: finished reload\n(%d new articles, %n unread articles, %f unread feeds)"
+reload-threads 8
+text-width 150
+scrolloff 5
+history-limit 0
+player "mpv --no-video"
+download-path "~/other/podcasts/%n"
+
+browser "surf %u"
+macro m set browser "mpv --really-quiet %u" ; open-in-browser ; set browser "surf %u"
+macro d set browser "setsid -f st -e yt-dlp %u" ; open-in-browser ; set browser "surf %u"
+
+bind-key j down
+bind-key k up
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key G end
+bind-key g home
+bind-key d pagedown
+bind-key u pageup
+bind-key l open
+bind-key h quit
+bind-key a toggle-article-read
+bind-key n next-unread
+bind-key N prev-unread
+bind-key U show-urls
+bind-key w pb-download
+
+color listfocus cyan black standout bold
+color listnormal_unread yellow default bold
+color listfocus_unread cyan black standout bold
+color info default red bold
+highlight article "(^Feed:.*|^Title:.*|^Author:.*)" yellow default
+highlight article "(^Link:.*|^Date:.*)" cyan default
+highlight article "\\[[0-9][0-9]*\\]" green default bold
+highlight article "\\[image\\ [0-9]+\\]" yellow default bold
+highlight article ":.*\\(link\\)$" blue default
+highlight article ":.*\\(image\\)$" yellow default
+highlight article ":.*\\(video\\)$" cyan default
