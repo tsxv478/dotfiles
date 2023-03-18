@@ -67,17 +67,17 @@ nnoremap <leader>f :NERDTreeToggle<CR>
 " lua require('lspconfig').rls.setup{}
 " lua require('lspconfig').quick_lint_js.setup{}
 
-nmap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
-nmap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>
-nmap <silent> gK <cmd>lua vim.lsp.buf.hover()<CR>
-nmap <silent> gz <cmd>lua vim.lsp.buf.references()<CR>
-nmap <silent> <leader>n <cmd>lua vim.lsp.buf.rename()<CR>
-nmap <silent> <leader>b <cmd>lua vim.lsp.buf.formatting()<CR>
-nmap <silent> <leader>a <cmd>lua vim.lsp.buf.code_action()<CR>
-nmap <silent> <leader>w <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
-nmap <silent> <leader>l <cmd>lua vim.diagnostic.setloclist()<CR>
-nmap <silent> ]g <cmd>lua vim.diagnostic.goto_next()<CR>
-nmap <silent> [g <cmd>lua vim.diagnostic.goto_prev()<CR>
+" nmap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
+" nmap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>
+" nmap <silent> gK <cmd>lua vim.lsp.buf.hover()<CR>
+" nmap <silent> gz <cmd>lua vim.lsp.buf.references()<CR>
+" nmap <silent> <leader>n <cmd>lua vim.lsp.buf.rename()<CR>
+" nmap <silent> <leader>b <cmd>lua vim.lsp.buf.formatting()<CR>
+" nmap <silent> <leader>a <cmd>lua vim.lsp.buf.code_action()<CR>
+" nmap <silent> <leader>w <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
+" nmap <silent> <leader>l <cmd>lua vim.diagnostic.setloclist()<CR>
+" nmap <silent> ]g <cmd>lua vim.diagnostic.goto_next()<CR>
+" nmap <silent> [g <cmd>lua vim.diagnostic.goto_prev()<CR>
 
 autocmd FileType c map <buffer> <leader>e :w<CR>:exec '!gcc' shellescape(@%, 1) '-o out; ./out'<CR>
 autocmd FileType python map <buffer> <leader>e :w<CR>:exec '!python' shellescape(@%, 1)<CR>
