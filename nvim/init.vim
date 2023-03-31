@@ -10,6 +10,7 @@ call plug#begin()
 Plug 'neovim/nvim-lspconfig'
 Plug 'ervandew/supertab'
 Plug 'morhetz/gruvbox'
+Plug 'folke/tokyonight.nvim'
 Plug 'preservim/nerdtree'
 Plug 'jreybert/vimagit'
 Plug 'tpope/vim-commentary'
@@ -82,4 +83,5 @@ nnoremap <leader>f :NERDTreeToggle<CR>
 autocmd FileType c map <buffer> <leader>e :w<CR>:exec '!gcc' shellescape(@%, 1) '-o out; ./out'<CR>
 autocmd FileType python map <buffer> <leader>e :w<CR>:exec '!python' shellescape(@%, 1)<CR>
 autocmd FileType sh map <buffer> <leader>e :w<CR>:exec '!sh' shellescape(@%, 1)<CR>
+" autocmd VimEnter * hi Normal guibg=NONE ctermbg=NONE
 autocmd VimLeave,VimSuspend * set guicursor=a:block-blinkon250
