@@ -7,20 +7,20 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
 endif
 
 call plug#begin()
-Plug 'neovim/nvim-lspconfig'
-Plug 'ervandew/supertab'
 Plug 'morhetz/gruvbox'
 Plug 'folke/tokyonight.nvim'
 Plug 'preservim/nerdtree'
 Plug 'jreybert/vimagit'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
+" Plug 'ervandew/supertab'
+" Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 let g:gruvbox_termcolors = 16
 let g:gruvbox_italic = 1
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+" let g:SuperTabDefaultCompletionType = "context"
+" let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
 colorscheme gruvbox
 syntax on
