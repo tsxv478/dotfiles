@@ -38,8 +38,8 @@ set scrolloff=5
 set tabstop=4
 set shiftwidth=4
 set laststatus=2
-set omnifunc=v:lua.vim.lsp.omnifunc
 set completeopt=menuone,noinsert
+" set omnifunc=v:lua.vim.lsp.omnifunc
 
 set statusline+=%<
 set statusline+=\ %F%r%m
