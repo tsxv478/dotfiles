@@ -34,5 +34,4 @@ alias \
 	ytdl='yt-dlp' \
 	re='zathura' \
 	nsxiv='nsxiv -a' \
-	units='units -H ""' \
-	pacs='pacman -Slq | fzf --reverse --multi --preview "pacman -Si {1}" --preview-window=right:75%:sharp | xargs -ro sudo pacman -S'
+	units='units -H ""'
