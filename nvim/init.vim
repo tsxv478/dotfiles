@@ -8,7 +8,7 @@ endif
 
 call plug#begin()
 Plug 'morhetz/gruvbox'
-Plug 'folke/tokyonight.nvim'
+Plug 'navarasu/onedark.nvim'
 Plug 'preservim/nerdtree'
 Plug 'jreybert/vimagit'
 Plug 'tpope/vim-commentary'
@@ -19,6 +19,7 @@ call plug#end()
 
 let g:gruvbox_termcolors = 16
 let g:gruvbox_italic = 1
+let g:onedark_config = { 'style': 'dark', 'term_colors': 'true', 'transparent': 'true' }
 " let g:SuperTabDefaultCompletionType = "context"
 " let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
