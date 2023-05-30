@@ -1,7 +1,7 @@
 autoload -U colors && colors
 PS1="%B%{$fg[yellow]%}[%{$fg[green]%}%n%{$fg[yellow]%}@%{$fg[cyan]%}%M%{$fg[yellow]%}:%{$fg[yellow]%}%~%{$fg[yellow]%}]"$'\n'"%{$fg[yellow]%}>%b "
 stty stop undef
-HISTFILE=~/.cache/histfile
+HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 setopt EXTENDED_HISTORY
