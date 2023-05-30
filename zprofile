@@ -1,7 +1,7 @@
 export TERMINAL='st'
 export EDITOR='nvim'
 export BROWSER='brave'
-export PATH="/home/atx71/.local/bin:$PATH"
+export PATH="$PATH:$HOME/.local/bin"
 export GOPATH="$HOME/.local/share/go"
 export ANSIBLE_CONFIG="$HOME/.config/ansible/ansible.cfg"
 export WINEDEBUG=-all
