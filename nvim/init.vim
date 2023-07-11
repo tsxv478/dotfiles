@@ -56,7 +56,6 @@ set statusline+=\
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯХЪБЮ;ABCDEFGHIJKLMNOPQRSTUVWXYZ{}<>,фисвуапршолдьтщзйкыегмцчняхъэ;abcdefghijklmnopqrstuvwxyz[]'
 
 imap ;j <Esc>
-imap жо <Esc>
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
