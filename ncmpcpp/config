@@ -13,7 +13,6 @@ seek_time = 5
 volume_change_step = 5
 progressbar_look = ||
 cyclic_scrolling = no
-lyrics_fetchers = musixmatch, plyrics, jahlyrics, internet
 display_volume_level = yes
 display_bitrate = yes
 mouse_support = yes
