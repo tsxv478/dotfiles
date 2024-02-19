@@ -15,9 +15,9 @@ zmodload zsh/complist
 _comp_options+=(globdots)
 
 alias \
-	ls='ls -Fv --color=auto --group-directories-first' \
-	ll='ls -lhvF --color=auto --group-directories-first' \
-	la='ls -lhvAF --color=auto --group-directories-first' \
+	ls='ls -v --color=auto --group-directories-first' \
+	ll='ls -lhv --color=auto --group-directories-first' \
+	la='ls -lhvA --color=auto --group-directories-first' \
 	grep='grep --color=auto' \
 	diff='diff --color=auto' \
 	tree='tree -C' \
