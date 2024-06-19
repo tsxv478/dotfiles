@@ -2,8 +2,8 @@ autoload -U colors && colors
 PS1="%B%{$fg[yellow]%}[%{$fg[green]%}%n%{$fg[yellow]%}@%{$fg[cyan]%}%M%{$fg[yellow]%}:%{$fg[yellow]%}%~%{$fg[yellow]%}]"$'\n'"%{$fg[yellow]%}>%b "
 stty stop undef
 HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=1000000
+SAVEHIST=1000000
 setopt EXTENDED_HISTORY
 unsetopt beep
 bindkey -e
