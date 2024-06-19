@@ -1,0 +1,24 @@
+IMAPStore <user>@<host>-remote
+Host mail.<host>
+Port 993
+User <user>@<host>
+PassCmd "pass mail"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore <user>@<host>-local
+Subfolders Verbatim
+Path ~/.local/share/mail/<user>@<host>/
+Inbox ~/.local/share/mail/<user>@<host>/INBOX
+
+Channel <user>@<host>
+Expunge Both
+Far :<user>@<host>-remote:
+Near :<user>@<host>-local:
+Patterns *
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+### End profile ###

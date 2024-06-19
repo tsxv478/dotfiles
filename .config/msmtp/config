@@ -1,0 +1,12 @@
+account <user>@<host>
+user <user>@<host>
+from <user>@<host>
+host mail.<host>
+port 587
+auth on
+passwordeval "pass mail"
+tls on
+tls_starttls on
+tls_certcheck on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile ~/.config/msmtp/msmtp.log
