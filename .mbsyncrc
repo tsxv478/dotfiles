@@ -4,7 +4,7 @@ Port 993
 User <user>@<host>
 PassCmd "pass mail"
 AuthMechs LOGIN
-SSLType IMAPS
+TLSType IMAPS
 CertificateFile /etc/ssl/certs/ca-certificates.crt
 
 MaildirStore <user>@<host>-local
