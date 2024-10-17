@@ -18,9 +18,8 @@ Plug 'ap/vim-css-color'
 " Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
-let g:gruvbox_termcolors = 16
-let g:gruvbox_italic = 1
 let g:onedark_config = { 'style': 'dark', 'term_colors': 'true', 'transparent': 'true' }
+let g:c_syntax_for_h = 1
 " let g:SuperTabDefaultCompletionType = "context"
 " let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
@@ -86,3 +85,5 @@ autocmd FileType python map <buffer> <leader>e :w<CR>:exec '!python' shellescape
 autocmd FileType sh map <buffer> <leader>e :w<CR>:exec '!sh' shellescape(@%, 1)<CR>
 " autocmd VimEnter * hi Normal guibg=NONE ctermbg=NONE
 autocmd VimLeave,VimSuspend * set guicursor=a:block-blinkon250
+
+lua require('init')
