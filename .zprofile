@@ -4,6 +4,7 @@ export BROWSER='brave'
 export PATH="$PATH:$HOME/.local/bin"
 export GOPATH="$HOME/.local/share/go"
 export ANSIBLE_CONFIG="$HOME/.config/ansible/ansible.cfg"
+export MOZ_USE_XINPUT2=1
 export WINEDEBUG=-all
 export AWT_TOOLKIT=MToolkit
 export _JAVA_AWT_WM_NONREPARENTING=1
