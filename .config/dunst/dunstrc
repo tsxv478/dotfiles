@@ -2,7 +2,6 @@
 
 [global]
     width = 300
-    height = 300
     origin = top-right
     offset = 15x35
     frame_width = 2
